@@ -2,7 +2,7 @@ public class MyArrays{
   public static void main(String[] args) {
     //testing aryToString
     int[] ary = {1, 2, 3, 4, 5};
-    System.out.println(arytoString(ary));
+    System.out.println(aryToString(ary));
   }
 
   public static String aryToString(int[] nums) {
@@ -18,8 +18,8 @@ public class MyArrays{
         res += ", ";
       }
     }
-  }
 
-  res += "]";
-  return res;
+    res += "]";
+    return res;
+  }
 }
