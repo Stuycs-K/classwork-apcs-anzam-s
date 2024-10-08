@@ -10,7 +10,7 @@ public class ArrayDemo{
     System.out.println(arrToString(test_arr));
     System.out.println(Arrays.toString(test_arr));
 
-    int[][] test_2Darr = new int[][]{{0, 1, 2, 3}, {4, 5}, {6}};
+    int[][] test_2Darr = new int[][]{{0, 1, 2, 3}, {4, 5}, {6}, {}};
     System.out.println(htmlTable(test_2Darr));
   }
 
@@ -149,7 +149,7 @@ public class ArrayDemo{
     for (int x = 0; x < nums.length; x++) {
       res += "<tr>";
 
-      for (int i = 0; x < nums[x].length; i++) {
+      for (int i = 0; i < nums[x].length; i++) { 
         res += "<td>";
         res += nums[x][i];
         res += "</td>";
@@ -158,6 +158,6 @@ public class ArrayDemo{
       res += "</tr>";
     }
 
-    return res;
+    return res += "</table>";
   }
 }
