@@ -23,9 +23,9 @@ public class Demo{
     System.out.println( p3.distanceTo(origin));
 
     // Equilateral Triangle
-    Point v1 = new Point (-1, 0);
-    Point v2 = new Point (1, 0);
-    Point v3 = new Point (0, Math.sqrt(3));
+    Point v1 = new Point (-0.5, 0);
+    Point v2 = new Point (0.5, 0);
+    Point v3 = new Point (0, Math.sqrt(3) / 2);
 
     // side lengths
     System.out.println(Point.distance(v1, v2));
