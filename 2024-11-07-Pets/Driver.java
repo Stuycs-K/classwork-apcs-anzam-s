@@ -16,5 +16,10 @@ public class Driver {
     Bird b1 = new Bird("chirp", 5, "birdy", 7, "blue");
     //Bird b2 = new Animal("moo", 10, "cow");
     Animal a2 = new Bird("chirp", 5, "birdy", 7, "blue");
+
+    System.out.println();
+    a1.speak();
+    b1.speak();
+    a2.speak();
   }
 }
