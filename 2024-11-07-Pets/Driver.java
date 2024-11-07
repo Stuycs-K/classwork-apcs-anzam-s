@@ -1,3 +1,6 @@
+//instead of calling the getName of Animal.java, it called the getName of Bird.java
+
+
 public class Driver {
   public static void main(String [] args) {
     Animal a = new Animal("moo", 10, "cow");
