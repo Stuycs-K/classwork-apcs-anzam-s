@@ -33,7 +33,7 @@ public class ColorDemo{
           }
       }
     }  
-    
+
     System.out.print("\u001b[0m");
   }
 }
