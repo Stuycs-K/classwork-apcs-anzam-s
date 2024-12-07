@@ -33,27 +33,27 @@ public abstract class Adventurer{
     consumable resource (mana/rage/money/witts etc)
   */
   //give it a short name (fewer than 13 characters)
-  public abstract String getSpecialName();
+  abstract String getSpecialName();
   //accessor methods
-  public abstract int getSpecial();
-  public abstract void setSpecial(int n);
-  public abstract int getSpecialMax();
+  abstract int getSpecial();
+  abstract void setSpecial(int n);
+  abstract int getSpecialMax();
 
   /*
     all adventurers must have a way to attack enemies and
     support their allys
   */
   //hurt or hinder the target adventurer
-  public abstract String attack(Adventurer other);
+  abstract String attack(Adventurer other);
 
   //heall or buff the target adventurer
-  public abstract String support(Adventurer other);
+  abstract String support(Adventurer other);
 
   //heall or buff self
-  public abstract String support();
+  abstract String support();
 
   //hurt or hinder the target adventurer, consume some special resource
-  public abstract String specialAttack(Adventurer other);
+  abstract String specialAttack(Adventurer other);
 
   /*
     standard methods

@@ -4,7 +4,7 @@ public class Soldier extends Adventurer{
   private int specialMax = 100;
 
   public Soldier(String name, int hp) {
-    Adventurer(name, hp);
+    super(name, hp);
   }
 
   String getSpecialName() {
@@ -27,25 +27,25 @@ public class Soldier extends Adventurer{
 
   String attack(Adventurer other) {
     other.applyDamage(10);
-    return other.getName() + "lost 10 HP";
+    return other.getName() + " lost 10 HP";
   }
 
   String support(Adventurer other) {
     int health = other.getHP();
     other.setHP(health+10);
-    return other.getName() + "gained 10 HP";
+    return other.getName() + " gained 10 HP";
   }
 
   String support() {
     int health = super.getHP();
     super.setHP(health + 10);
-    return super.getName() + "gained 10 HP";
+    return super.getName() + " gained 10 HP";
   }
 
   String specialAttack(Adventurer other) {
     other.applyDamage(20);
     support();
 
-    return other.getName() + "lost 20 HP and " super.getSpecialName() + "gained 10 HP";
+    return other.getName() + " lost 20 HP and " + getName() + " gained 10 HP";
   }
 }
