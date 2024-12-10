@@ -20,7 +20,22 @@ public class Game{
       System.out.println("enemy: " + enemy.getHP() + "HP/" + enemy.getSpecial() + " " + enemy.getSpecialName());
 
       while (user.getHP() > 0 && enemy.getHP() > 0) {
-          
+          int randomNum = (int)(Math.random() * 3) + 1;
+
+          if (randomNum == 1) {
+            System.out.println(enemy.attack(user));
+          }
+          else if (randomNum == 2) {
+            System.out.println(enemy.specialAttack(user));
+          }
+          else if (randomNum == 3) {
+            System.out.println(enemy.support());
+          }
+
+          if (user.getHP() <= 0) {
+            System.out.println("Enemy won!");
+            return;
+          }
 
           System.out.println("Type: (a)ttack / (sp)ecial / (su)pport / quit");
           String choice = userInput.nextLine();
@@ -39,5 +54,7 @@ public class Game{
             return;
           }
       }
+
+      System.out.println(userName + " won!");
   }
 }
